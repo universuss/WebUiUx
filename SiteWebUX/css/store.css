@@ -1,0 +1,122 @@
+.carrinho{
+  width: 20px;
+  color: rgb(204, 144, 154);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.wrapper > div {
+  color: #fff;
+  padding: 1em;
+  width: 100%;
+}
+
+
+.wrapper > div > img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.wrapper > div > button {
+  width: 100%;
+  border: none;
+  background: rgb(204, 144, 154);
+  margin-top: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 100%;
+}
+
+/* css cart */
+
+.wrapper-cart {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.528);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.wrapper-cart .cart {
+  height: 300px;
+  max-height: 600px;
+  width: 100vw;
+  background: rgba(243, 233, 251, 0.5);
+  overflow: auto;
+}
+.wrapper-cart .cart .cart-button{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.wrapper-cart #cart-itens {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-cart .cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper-cart .cart-item .cart-item-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.send-button{
+  position: relative;
+  margin-top: 0.5%;
+  margin-right: 0.5%;
+  width: 150px;
+  height: 40px;
+  border-radius: 5%;
+  border-color: transparent;
+  background-color: transparent;
+}
+#send-button{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 110%;
+}
+
+.remove-button{
+  object-fit: cover;
+  max-width: 30%;
+  max-height: 30%;
+  background-color: transparent;
+  border-color: transparent;
+  padding-right: 0px;
+}
+.remove-img{
+  max-width: 70%;
+  max-height: 50%;
+}
+
+#titulo-academicos {
+  text-align: center;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #635C62;
+}
+
+#lista-academicos {
+  text-align: center;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  list-style-type: none;
+  color: #635C62;
+}

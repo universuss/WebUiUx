@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giordano</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/store.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
+  <script async src="../js/carrinho.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><img id="Logo" src="../img/Logo.png" alt=""></li>
+      <li><a href="/index.html">HOME</a></li>
+      <li><a href="/pages/store.html">STORE</a></li>
+      <li><a href="/pages/support.html">SUPPORT</a></li>
+      <li><a onclick="openCart()"><img class="carrinho" src="../img/Carrinho.png" alt="Carrinho"></a></li>
+    </ul>
+  </header>
+
+  <!-- INICIO SUPORTE -->
+  
+
+  <h1 id="titulo-academicos">ACADÊMICOS</h1>
+<ul id="lista-academicos">
+  <li>Hélio Costa</li>
+  <li>Luiz Felipe Marcon</li>
+  <li>Maria Eduarda</li>
+  <li>Vinicius Gabriel Zanatta</li>
+</ul>
+
+  <!-- FINAL SUPORTE -->
+
+  <!-- inicio carrinho -->
+  <div class="wrapper-cart show-cart" id="cart">
+    <div class="cart">
+      <button class="cart-button" onclick="closeCart()"><img src="../img/fechar.png"  width="20px" height="20px" alt="Close"></button>
+      <div id="cart-itens">
+      </div>
+      <button class="send-button" onclick="enviar()"><img id="send-button" src="/img/enviar_pedido.png" alt=""></button>
+    </div>
+  </div>
+  <!-- final carrinho -->
+
+</body>
+
+</html>
